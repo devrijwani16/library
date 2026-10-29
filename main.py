@@ -5,17 +5,17 @@
 
 #git init then # git add .
 
-# "Renamed main.py to student_crud.py" //  uvicorn student_crud:app --reload
+# "Renamed main.py to book_crud.py" //  uvicorn book_crud:app --reload
 
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
-from routers import studentRouter
-from routers.studentRouter import studentRouter
+from routers import bookRouter
+from routers.bookRouter import bookRouter
 
 app = FastAPI()
-app.include_router(studentRouter)
+app.include_router(bookRouter)
 
-# render try to run on https://student-curd.onrender.com 
+# render try to run on https://book-curd.onrender.com 
 @app.get("/")
 def home():
     return RedirectResponse(url="/docs")

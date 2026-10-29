@@ -6,9 +6,9 @@ from typing import Optional
 app = FastAPI()
 
 
-class student(BaseModel):
+class book(BaseModel):
     id: Optional[int] = None
-    name: str
-    email: str
-    course: str
-    semester: int
+    book_name: str
+    author: str
+    publication: str
+    year: int

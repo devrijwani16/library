@@ -1,27 +1,27 @@
-# Student CRUD API
+# book CRUD API
 
-A simple Student CRUD Application built using FastAPI. This project demonstrates CRUD (Create, Read, Update, Delete) operations using local in-memory storage without any database.
+A simple book CRUD Application built using FastAPI. This project demonstrates CRUD (Create, Read, Update, Delete) operations using local in-memory storage without any database.
 
 ---
 
 ## Features
 
-✅ Create Student
+✅ Create book
 
-✅ Get All Students
+✅ Get All books
 
-✅ Get Student By ID
+✅ Get book By ID
 
-✅ Update Student
+✅ Update book
 
-✅ Delete Student
+✅ Delete book
 
 ---
 
 ## Project Structure
 
 ```text
-student_curd/
+book_curd/
 │
 ├── main.py
 ├── requirements.txt
@@ -29,13 +29,13 @@ student_curd/
 ├── .gitignore
 │
 ├── models/
-│   └── studentModel.py
+│   └── bookModel.py
 │
 ├── controllers/
-│   └── studentController.py
+│   └── bookController.py
 │
 └── routers/
-    └── studentRouter.py
+    └── bookRouter.py
 ```
 
 ---
@@ -88,59 +88,60 @@ Swagger UI will open automatically where all APIs can be tested.
 
 | Method | Endpoint |
 |----------|----------|
-| POST | `/students/poststudents` |
-| GET | `/students/getstudents` |
-| GET | `/students/getstudent/{studentid}` |
-| PUT | `/students/updatestudent/{studentid}` |
-| DELETE | `/students/deletestudent/{studentid}` |
+| POST | `/books/postbooks` |
+| GET | `/books/getbooks` |
+| GET | `/books/getbook/{bookid}` |
+| PUT | `/books/updatebook/{bookid}` |
+| DELETE | `/books/deletebook/{bookid}` |
 
 ---
 
-## How Student CRUD Works
+## How book CRUD Works
 
-### Create Student
+### Create book
 
-Creates a new student and automatically assigns a unique ID.
+Creates a new book and automatically assigns a unique ID.
 
 Example:
 
 ```json
 {
   "name": "Dev",
-  "email": "dev@gmail.com",
-  "course": "MSC_IT",
-  "semester": 7
+  "book_name": "be the men",
+  "author": "dev",
+  "publication": "dev",
+  "year": 2009
 }
 ```
 
-### Get All Students
+### Get All books
 
-Returns all student records stored in memory.
+Returns all book records stored in memory.
 
-### Get Student By ID
+### Get book By ID
 
-Returns a specific student using Student ID.
+Returns a specific book using book ID.
 
 Example:
 
 ```text
-/students/getstudent/1
+/books/getbook/1
 ```
 
-### Update Student
+### Update book
 
-Updates the information of an existing student.
+Updates the information of an existing book.
 
-### Delete Student
+### Delete book
 
-Deletes a student record using the Student ID.
+Deletes a book record using the book ID.
 
 ### Storage
 
 This project stores data temporarily using:
 
 ```python
-students = []
+books = []
 ```
 
 No database is used.
@@ -189,7 +190,7 @@ git add .
 ### Create Commit
 
 ```bash
-git commit -m "Initial Student CRUD Project"
+git commit -m "Initial book CRUD Project"
 ```
 
 ### Create Main Branch
@@ -239,4 +240,4 @@ git log --oneline
 
 **Dev Rijwani**
 
-MSc IT Student
+MSc IT book
