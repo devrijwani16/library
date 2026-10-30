@@ -4,6 +4,8 @@
 #Remove-Item -Recurse -Force __pycache__
 
 #git init then # git add .
+# git remote -v
+# git remote set-url origin https://github.com/devrijwani16/library.git   
 
 # "Renamed main.py to book_crud.py" //  uvicorn book_crud:app --reload
 
