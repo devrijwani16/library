@@ -5,7 +5,8 @@
 
 #git init then # git add .
 # git remote -v
-# git remote set-url origin https://github.com/devrijwani16/library.git   
+# git remote set-url origin https://github.com/devrijwani16/library.git  
+# git push -u origin main
 
 # "Renamed main.py to book_crud.py" //  uvicorn book_crud:app --reload
 
